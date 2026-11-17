@@ -121,12 +121,13 @@ git push -u origin main
 
 ---
 
-## 五、提交前请替换的占位信息
+## 五、联系信息与可调整项
 
-| 位置 | 现在的内容 | 需要改成 |
+车票上只保留 GitHub 主页（`github.com/sjh-2026`），不公开个人邮箱，避免收到垃圾邮件；如需公开邮箱，可在 `contact.html` 的 `ticket__rows` 里加回一行。
+
+| 位置 | 当前内容 | 说明 |
 | --- | --- | --- |
-| `contact.html` 车票 | `sunjunhao@example.com` | 你的真实邮箱 |
-| `contact.html` 车票 | `github.com/your-name` | 你的 GitHub 主页 |
+| `contact.html` 车票 | `github.com/sjh-2026` | 已填写真实 GitHub 主页 |
 | `about.html` 档案 | 年级 `2026 级` | 若不符请修改 |
 | `study.html` 课表 | 示例课表 | 按实际课表调整（节次、课程、教室） |
 
