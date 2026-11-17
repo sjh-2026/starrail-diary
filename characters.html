@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.replace("no-js", "js");</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>星穹图鉴 · 十位同行者 | 星穹日志</title>
+<meta name="description" content="以《崩坏：星穹铁道》十位角色为线索的星穹图鉴：按命途筛选，附上原创命途图标与个人短评。">
+<meta name="author" content="孙俊豪">
+<meta name="theme-color" content="#05060e">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html" aria-label="星穹日志 · 返回首页">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__text">星穹日志<em>STAR RAIL DIARY</em></span>
+    </a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navmenu" aria-label="打开导航菜单">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__menu" id="navmenu" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="about.html">开拓档案</a>
+      <a href="characters.html">星穹图鉴</a>
+      <a href="gallery.html">手账相册</a>
+      <a href="study.html">开拓计划</a>
+      <a class="nav__cta" href="contact.html">联络</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head" data-index="02">
+    <div class="container">
+      <p class="eyebrow">PATH INDEX / 02</p>
+      <h1 class="page-title">星穹图鉴</h1>
+      <p class="page-lead">十位同行者，七条命途。我把喜欢他们的理由写成短评，也做了一套可以点击的命途筛选器——就像在列车上翻阅一本会自己翻页的图鉴。</p>
+      <nav class="crumbs" aria-label="面包屑">
+        <a href="index.html">首页</a><span>/</span><span>星穹图鉴</span>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="filters" role="group" aria-label="按命途筛选角色">
+        <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">全部 · 10</button>
+        <button class="chip" type="button" data-filter="destruction" aria-pressed="false">毁灭</button>
+        <button class="chip" type="button" data-filter="hunt" aria-pressed="false">巡猎</button>
+        <button class="chip" type="button" data-filter="erudition" aria-pressed="false">智识</button>
+        <button class="chip" type="button" data-filter="harmony" aria-pressed="false">同谐</button>
+        <button class="chip" type="button" data-filter="nihility" aria-pressed="false">虚无</button>
+        <button class="chip" type="button" data-filter="preservation" aria-pressed="false">存护</button>
+        <button class="chip" type="button" data-filter="abundance" aria-pressed="false">丰饶</button>
+      </div>
+
+      <div class="grid-cards" id="charGrid">
+
+        <article class="char" data-path="erudition" style="--c:#ff7a4d;--c-soft:rgba(255,122,77,.22)" data-reveal>
+          <div class="char__art">
+            <span class="char__stars" aria-hidden="true">★★★★★</span>
+            <span class="char__elem">火</span>
+            <span class="char__watermark" aria-hidden="true">姬</span>
+            <img class="char__icon" src="assets/img/icon-erudition.svg" alt="智识命途图标" width="64" height="64">
+          </div>
+          <div class="char__body">
+            <h3>姬子 <em>Himeko</em></h3>
+            <p class="char__path">智识 · 火 · 星穹列车</p>
+            <p class="char__note">列车的领航员。她让我相信：再远的航线，也是由一节一节车厢接起来的。</p>
+          </div>
+        </article>
+
+        <article class="char" data-path="nihility" style="--c:#ffe08a;--c-soft:rgba(255,224,138,.2)" data-reveal data-delay="1">
+          <div class="char__art">
+            <span class="char__stars" aria-hidden="true">★★★★★</span>
+            <span class="char__elem">虚数</span>
+            <span class="char__watermark" aria-hidden="true">瓦</span>
+            <img class="char__icon" src="assets/img/icon-nihility.svg" alt="虚无命途图标" width="64" height="64">
+          </div>
+          <div class="char__body">
+            <h3>瓦尔特 <em>Welt</em></h3>
+            <p class="char__path">虚无 · 虚数 · 星穹列车</p>
+            <p class="char__note">沉稳得像整支队伍的锚。第一次看他用重力碾场，我才理解什么叫“底气”。</p>
+          </div>
+        </article>
+
+        <article class="char" data-path="preservation" style="--c:#7fd0ff;--c-soft:rgba(127,208,255,.2)" data-reveal data-delay="2">
+          <div class="char__art">
+            <span class="char__stars" aria-hidden="true">★★★★</span>
+            <span class="char__elem">冰</span>
+            <span class="char__watermark" aria-hidden="true">三</span>
+            <img class="char__icon" src="assets/img/icon-preservation.svg" alt="存护命途图标" width="64" height="64">
+          </div>
+          <div class="char__body">
+            <h3>三月七 <em>March 7th</em></h3>
+            <p class="char__path">存护 · 冰 · 星穹列车</p>
+            <p class="char__note">相机从不离手。她提醒我：记录本身，就是一种很认真的热爱。</p>
+          </div>
+        </article>
+
+        <article class="char" data-path="hunt" style="--c:#7fe0b0;--c-soft:rgba(127,224,176,.2)" data-reveal data-delay="3">
+          <div class="char__art">
+            <span class="char__stars" aria-hidden="true">★★★★★</span>
+            <span class="char__elem">风</span>
+            <span class="char__watermark" aria-hidden="true">丹</span>
+            <img class="char__icon" src="assets/img/icon-hunt.svg" alt="巡猎命途图标" width="64" height="64">
+          </div>
+          <div class="char__body">
+            <h3>丹恒 <em>Dan Heng</em></h3>
+            <p class="char__path">巡猎 · 风 · 星穹列车</p>
+            <p class="char__note">话不多，但每句都在关键处。像极了调试时那行真正有用的报错。</p>
+          </div>
+        </article>
+
+        <article class="char" data-path="nihility" style="--c:#b58cff;--c-soft:rgba(181,140,255,.22)" data-reveal data-delay="4">
+          <div class="char__art">
+            <span class="char__stars" aria-hidden="true">★★★★★</span>
+            <span class="char__elem">雷</span>
+            <span class="char__watermark" aria-hidden="true">卡</span>
+            <img class="char__icon" src="assets/img/icon-nihility.svg" alt="虚无命途图标" width="64" height="64">
+          </div>
+          <div class="char__body">
+            <h3>卡芙卡 <em>Kafka</em></h3>
+            <p class="char__path">虚无 · 雷 · 星核猎手</p>
+            <p class="char__note">台词像谜语，行动却有清晰的目的。喜欢她那种“我早就想好了”的从容。</p>
+          </div>
+        </article>
+
+        <article class="char" data-path="nihility" style="--c:#8f7bff;--c-soft:rgba(143,123,255,.22)" data-reveal>
+          <div class="char__art">
+            <span class="char__stars" aria-hidden="true">★★★★★</span>
+            <span class="char__elem">量子</span>
+            <span class="char__watermark" aria-hidden="true">狼</span>
+            <img class="char__icon" src="assets/img/icon-nihility.svg" alt="虚无命途图标" width="64" height="64">
+          </div>
+          <div class="char__body">
+            <h3>银狼 <em>Silver Wolf</em></h3>
+            <p class="char__path">虚无 · 量子 · 星核猎手</p>
+            <p class="char__note">把整片宇宙当成游戏来打。作为计算机学生，很难不对一个“黑客”设定心动。</p>
+          </div>
+        </article>
+
+        <article class="char" data-path="hunt" style="--c:#b58cff;--c-soft:rgba(181,140,255,.22)" data-reveal data-delay="1">
+          <div class="char__art">
+            <span class="char__stars" aria-hidden="true">★★★★★</span>
+            <span class="char__elem">雷</span>
+            <span class="char__watermark" aria-hidden="true">景</span>
+            <img class="char__icon" src="assets/img/icon-hunt.svg" alt="巡猎命途图标" width="64" height="64">
+          </div>
+          <div class="char__body">
+            <h3>景元 <em>Jing Yuan</em></h3>
+            <p class="char__path">巡猎 · 雷 · 仙舟罗浮</p>
+            <p class="char__note">罗浮的将军。笑着把最重的担子扛下来——真正的强大，从来不需要大声。</p>
+          </div>
+        </article>
+
+        <article class="char" data-path="harmony" style="--c:#8f7bff;--c-soft:rgba(143,123,255,.22)" data-reveal data-delay="2">
+          <div class="char__art">
+            <span class="char__stars" aria-hidden="true">★★★★★</span>
+            <span class="char__elem">量子</span>
+            <span class="char__watermark" aria-hidden="true">花</span>
+            <img class="char__icon" src="assets/img/icon-harmony.svg" alt="同谐命途图标" width="64" height="64">
+          </div>
+          <div class="char__body">
+            <h3>花火 <em>Sparkle</em></h3>
+            <p class="char__path">同谐 · 量子 · 假面愚者</p>
+            <p class="char__note">面具之下还是面具。她让我明白，规则有时候也可以被重新编排。</p>
+          </div>
+        </article>
+
+        <article class="char" data-path="destruction" style="--c:#ff7a4d;--c-soft:rgba(255,122,77,.22)" data-reveal data-delay="3">
+          <div class="char__art">
+            <span class="char__stars" aria-hidden="true">★★★★★</span>
+            <span class="char__elem">火</span>
+            <span class="char__watermark" aria-hidden="true">萤</span>
+            <img class="char__icon" src="assets/img/icon-destruction.svg" alt="毁灭命途图标" width="64" height="64">
+          </div>
+          <div class="char__body">
+            <h3>流萤 <em>Firefly</em></h3>
+            <p class="char__path">毁灭 · 火 · 星核猎手</p>
+            <p class="char__note">短暂却滚烫。她提醒我：热爱这件事，本来就不该等到“以后”。</p>
+          </div>
+        </article>
+
+        <article class="char" data-path="abundance" style="--c:#ffe08a;--c-soft:rgba(255,224,138,.2)" data-reveal data-delay="4">
+          <div class="char__art">
+            <span class="char__stars" aria-hidden="true">★★★★★</span>
+            <span class="char__elem">虚数</span>
+            <span class="char__watermark" aria-hidden="true">罗</span>
+            <img class="char__icon" src="assets/img/icon-abundance.svg" alt="丰饶命途图标" width="64" height="64">
+          </div>
+          <div class="char__body">
+            <h3>罗刹 <em>Luocha</em></h3>
+            <p class="char__path">丰饶 · 虚数 · 行商</p>
+            <p class="char__note">温和的外表，深不见底的行程。队伍里最安静的那个，往往最可靠。</p>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="disclaimer">
+        关于素材：本页十张卡面均为 CSS 渐变与原创 SVG 命途图标组合而成，没有使用官方立绘、游戏截图或网络图片；
+        “毁灭 / 巡猎 / 智识 / 同谐 / 虚无 / 存护 / 丰饶”图标为本人在 64×64 网格上手绘的线性符号。
+        角色名称、命途与世界观设定版权归米哈游所有，本页仅用于《计算机基础》课程作业的学习与交流。
+      </p>
+
+      <div class="sec-foot">
+        <a class="btn btn--ghost" href="gallery.html">去手账相册看看 <span class="btn__arrow" aria-hidden="true">→</span></a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">星穹日志<em>STAR RAIL DIARY</em></span>
+        </a>
+        <p>计算机专业 2611 班 · 孙俊豪的个人主页<br>以《崩坏：星穹铁道》为视觉主题的课程设计作业</p>
+      </div>
+      <nav class="footer__links" aria-label="页脚导航">
+        <a href="index.html">首页</a>
+        <a href="about.html">开拓档案</a>
+        <a href="characters.html">星穹图鉴</a>
+        <a href="gallery.html">手账相册</a>
+        <a href="study.html">开拓计划</a>
+        <a href="contact.html">联络</a>
+      </nav>
+    </div>
+    <p class="footer__note">
+      声明：本站为《计算机基础》课程作业，非官方页面。页面中的星球、列车与手账插画均由本人使用 SVG 代码绘制，未使用官方立绘或网络素材；
+      角色名称与世界观设定版权归米哈游所有，本站仅作学习交流之用，不作商业用途。
+    </p>
+    <p class="footer__copy">
+      <span>© <span data-year>2026</span> 孙俊豪 · 2611 班</span>
+      <span>BUILT WITH HTML / CSS / JAVASCRIPT · PUBLISHED ON GITHUB PAGES</span>
+    </p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

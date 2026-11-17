@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="星海与无尽星轨插画">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#02030a"/>
+      <stop offset=".45" stop-color="#080a20"/>
+      <stop offset="1" stop-color="#1a1038"/>
+    </linearGradient>
+    <radialGradient id="neb" cx=".3" cy=".4" r=".7">
+      <stop offset="0" stop-color="#6f5ae0" stop-opacity=".45"/>
+      <stop offset=".6" stop-color="#2a7d9e" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="milky" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7f8fff" stop-opacity="0"/>
+      <stop offset=".35" stop-color="#b9a8ff" stop-opacity=".35"/>
+      <stop offset=".65" stop-color="#8fe6ff" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#7f8fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8a672c"/>
+      <stop offset=".45" stop-color="#ffe3a3"/>
+      <stop offset="1" stop-color="#7fd8e8"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffe3a3" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffe3a3" stop-opacity=".85"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <rect width="800" height="600" fill="url(#neb)"/>
+
+  <g transform="rotate(-24 400 300)" filter="url(#soft)" opacity=".8">
+    <rect x="-120" y="250" width="1040" height="86" fill="url(#milky)"/>
+    <rect x="-120" y="300" width="1040" height="40" fill="url(#milky)" opacity=".7"/>
+  </g>
+
+  <g fill="#ffffff">
+    <circle cx="52" cy="60" r="1.5" opacity=".85"/><circle cx="104" cy="130" r="1" opacity=".5"/>
+    <circle cx="166" cy="46" r="1.2" opacity=".6"/><circle cx="228" cy="104" r="1.8" opacity=".85"/>
+    <circle cx="292" cy="58" r="1" opacity=".5"/><circle cx="356" cy="122" r="1.3" opacity=".65"/>
+    <circle cx="420" cy="40" r="1.6" opacity=".8"/><circle cx="486" cy="96" r="1" opacity=".5"/>
+    <circle cx="548" cy="52" r="1.4" opacity=".7"/><circle cx="614" cy="118" r="1.1" opacity=".55"/>
+    <circle cx="676" cy="64" r="1.7" opacity=".8"/><circle cx="742" cy="110" r="1" opacity=".5"/>
+    <circle cx="770" cy="190" r="1.3" opacity=".6"/>
+    <circle cx="88" cy="230" r="1.2" opacity=".55"/><circle cx="182" cy="200" r="1" opacity=".4"/>
+    <circle cx="640" cy="220" r="1.4" opacity=".6"/><circle cx="712" cy="266" r="1" opacity=".45"/>
+    <circle cx="120" cy="330" r="1" opacity=".4"/><circle cx="60" cy="430" r="1.3" opacity=".5"/>
+    <circle cx="740" cy="400" r="1.2" opacity=".45"/><circle cx="690" cy="486" r="1" opacity=".4"/>
+  </g>
+
+  <!-- 星穹环 -->
+  <g fill="none" opacity=".5">
+    <circle cx="400" cy="310" r="270" stroke="#7f8fff" stroke-width="1"/>
+    <circle cx="400" cy="310" r="304" stroke="#ffe3a3" stroke-width=".8" stroke-dasharray="2 12"/>
+  </g>
+
+  <!-- 星座 -->
+  <g>
+    <g stroke="#9fb8ff" stroke-width=".9" opacity=".55">
+      <path d="M120 150 L 168 128 L 208 168 L 258 142 L 300 186"/>
+    </g>
+    <g fill="#dff1ff">
+      <circle cx="120" cy="150" r="2.6"/><circle cx="168" cy="128" r="1.8"/>
+      <circle cx="208" cy="168" r="2.2"/><circle cx="258" cy="142" r="1.8"/>
+      <circle cx="300" cy="186" r="2.8"/>
+    </g>
+  </g>
+
+  <!-- 星轨 -->
+  <g>
+    <g stroke="url(#rail)" stroke-width="4" fill="none" stroke-linecap="round" filter="url(#glow)">
+      <path d="M-60 620 L 690 332"/>
+      <path d="M240 620 L 706 332"/>
+    </g>
+    <g stroke="#ffe3a3" stroke-width="1.6" opacity=".55">
+      <path d="M-60 620 L 690 332"/><path d="M240 620 L 706 332"/>
+    </g>
+    <g stroke="url(#fade)" stroke-width="2.4" opacity=".55">
+      <path d="M-60 620 L 240 620"/><path d="M15 591 L 287 591"/><path d="M90 562 L 333 562"/>
+      <path d="M165 534 L 380 534"/><path d="M240 505 L 426 505"/><path d="M315 476 L 473 476"/>
+      <path d="M390 447 L 520 447"/><path d="M465 418 L 566 418"/><path d="M540 390 L 613 390"/>
+      <path d="M615 361 L 659 361"/><path d="M652 346 L 682 346"/>
+    </g>
+  </g>
+
+  <!-- 远处列车 -->
+  <g transform="translate(520 420) scale(.36) rotate(-22)">
+    <path d="M0 40 V 16 Q0 -14 34 -14 H 190 Q 238 -14 258 4 Q 274 18 262 30 L 246 42 Z" fill="#0d1220" stroke="#ffe3a3" stroke-width="3"/>
+    <g fill="#ffe3a3">
+      <circle cx="70" cy="6" r="9"/><circle cx="106" cy="6" r="9"/><circle cx="142" cy="6" r="9"/><circle cx="178" cy="6" r="9"/>
+    </g>
+    <circle cx="70" cy="40" r="14" fill="#0d1220" stroke="#c9a865" stroke-width="3"/>
+    <circle cx="180" cy="40" r="14" fill="#0d1220" stroke="#c9a865" stroke-width="3"/>
+  </g>
+
+  <!-- 流星 -->
+  <g opacity=".85">
+    <path d="M660 96 L 560 168" stroke="url(#fade)" stroke-width="2" fill="none"/>
+    <circle cx="560" cy="168" r="2.4" fill="#fff4d0" filter="url(#glow)"/>
+  </g>
+
+  <!-- 前景星尘 -->
+  <g fill="#ffe3a3" opacity=".7">
+    <circle cx="320" cy="540" r="1.6"/><circle cx="392" cy="566" r="1.2"/><circle cx="470" cy="532" r="1.8"/>
+    <circle cx="548" cy="574" r="1.1"/><circle cx="620" cy="540" r="1.4"/><circle cx="200" cy="570" r="1.2"/>
+  </g>
+  <path d="M0 600 V 586 Q 200 570 400 584 T 800 578 V 600 Z" fill="#04050c"/>
+</svg>

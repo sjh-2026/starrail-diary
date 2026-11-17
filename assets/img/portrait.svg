@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="开拓者抽象剪影肖像">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090c18"/>
+      <stop offset=".5" stop-color="#101533"/>
+      <stop offset="1" stop-color="#1b1140"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".42" r=".58">
+      <stop offset="0" stop-color="#8b6cf0" stop-opacity=".5"/>
+      <stop offset=".55" stop-color="#4a3a9e" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe3a3"/>
+      <stop offset=".45" stop-color="#62e0ff"/>
+      <stop offset="1" stop-color="#8b6cf0"/>
+    </linearGradient>
+    <linearGradient id="coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b2136"/>
+      <stop offset="1" stop-color="#080a13"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8a672c"/>
+      <stop offset=".5" stop-color="#f6e2b0"/>
+      <stop offset="1" stop-color="#8a672c"/>
+    </linearGradient>
+    <filter id="g" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#bg)"/>
+  <rect width="600" height="800" fill="url(#halo)"/>
+
+  <g fill="#ffffff">
+    <circle cx="78" cy="96" r="1.6" opacity=".8"/><circle cx="146" cy="54" r="1" opacity=".5"/>
+    <circle cx="488" cy="82" r="1.8" opacity=".85"/><circle cx="530" cy="164" r="1" opacity=".5"/>
+    <circle cx="60" cy="248" r="1.2" opacity=".6"/><circle cx="546" cy="300" r="1.4" opacity=".6"/>
+    <circle cx="112" cy="392" r="1" opacity=".45"/><circle cx="470" cy="438" r="1.2" opacity=".5"/>
+    <circle cx="152" cy="560" r="1" opacity=".4"/><circle cx="500" cy="596" r="1.3" opacity=".5"/>
+    <circle cx="86" cy="690" r="1.1" opacity=".45"/><circle cx="452" cy="726" r="1" opacity=".4"/>
+  </g>
+
+  <ellipse cx="300" cy="380" rx="250" ry="250" fill="none" stroke="url(#gold)" stroke-width="1" opacity=".45"/>
+  <ellipse cx="300" cy="380" rx="212" ry="212" fill="none" stroke="#62e0ff" stroke-width=".8" opacity=".28" stroke-dasharray="6 10"/>
+  <ellipse cx="300" cy="560" rx="268" ry="64" fill="none" stroke="#62e0ff" stroke-width="1" opacity=".22" transform="rotate(-12 300 560)"/>
+
+  <g opacity=".55" filter="url(#soft)">
+    <ellipse cx="300" cy="330" rx="190" ry="150" fill="#6f5ae0"/>
+  </g>
+
+  <!-- 身体 -->
+  <path d="M120 800 C 128 690 172 610 234 570 L 268 552 L 300 568 L 332 552 L 366 570 C 428 610 472 690 480 800 Z" fill="url(#coat)" stroke="#48527a" stroke-width="1.4"/>
+  <path d="M268 552 L 300 602 L 332 552" fill="none" stroke="url(#gold)" stroke-width="2.2"/>
+  <path d="M262 596 L 206 800" stroke="url(#gold)" stroke-width="1.6" opacity=".8"/>
+  <path d="M338 596 L 394 800" stroke="url(#gold)" stroke-width="1.6" opacity=".8"/>
+  <path d="M300 602 V 800" stroke="#48527a" stroke-width="1" opacity=".6"/>
+
+  <!-- 星图刺绣 -->
+  <g stroke="#7f8fd4" stroke-width=".8" opacity=".65">
+    <path d="M232 664 L 268 706 L 246 760 M268 706 L 322 690 M322 690 L 356 742 M356 742 L 392 700"/>
+  </g>
+  <g fill="#ffe3a3">
+    <circle cx="232" cy="664" r="2.4"/><circle cx="268" cy="706" r="3"/><circle cx="246" cy="760" r="2"/>
+    <circle cx="322" cy="690" r="3.2"/><circle cx="356" cy="742" r="2.2"/><circle cx="392" cy="700" r="2.6"/>
+  </g>
+
+  <!-- 胸口星琼 -->
+  <g transform="translate(300 636)" filter="url(#g)">
+    <path d="M0 -22 L16 0 L0 22 L-16 0 Z" fill="#ffe3a3"/>
+    <path d="M0 -22 L16 0 L0 22 Z" fill="#fff7e4" opacity=".7"/>
+  </g>
+
+  <!-- 颈与头 -->
+  <rect x="282" y="492" width="36" height="62" rx="14" fill="#0c0f1a"/>
+  <path d="M300 322 C 246 322 222 368 222 418 C 222 472 256 510 300 510 C 344 510 378 472 378 418 C 378 368 354 322 300 322 Z" fill="#0d1120" stroke="url(#rim)" stroke-width="1.6"/>
+  <path d="M214 416 C 210 346 244 292 300 292 C 358 292 392 342 386 412 L 372 362 C 358 344 340 350 328 372 L 320 336 C 304 354 284 358 272 348 L 258 386 C 244 366 226 382 214 416 Z" fill="#161b30" stroke="url(#gold)" stroke-width="1.2"/>
+
+  <!-- 额前星饰 -->
+  <g transform="translate(300 356)">
+    <path d="M0 -14 L4 -4 L14 0 L4 4 L0 14 L-4 4 L-14 0 L-4 -4 Z" fill="#ffe3a3" filter="url(#g)"/>
+  </g>
+
+  <!-- 飘浮星琼 -->
+  <g fill="none" stroke="#62e0ff" stroke-width="1" opacity=".7">
+    <path d="M118 300 L134 268 L150 300 L134 332 Z"/>
+    <path d="M470 236 L482 212 L494 236 L482 260 Z"/>
+  </g>
+
+  <!-- 四角框 -->
+  <g stroke="url(#gold)" stroke-width="1.4" fill="none" opacity=".8">
+    <path d="M34 34 H84 M34 34 V84"/>
+    <path d="M566 34 H516 M566 34 V84"/>
+    <path d="M34 766 H84 M34 766 V716"/>
+    <path d="M566 766 H516 M566 766 V716"/>
+  </g>
+</svg>

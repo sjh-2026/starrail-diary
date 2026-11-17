@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700" role="img" aria-label="手账拼贴：车票、拍立得与胶带">
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#c2ad8c" opacity=".55"/>
+    </pattern>
+    <pattern id="stripes" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <rect width="7" height="14" fill="#e7cba2" opacity=".5"/>
+    </pattern>
+    <linearGradient id="ph1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1140"/>
+      <stop offset=".55" stop-color="#3c2a7a"/>
+      <stop offset="1" stop-color="#0d2440"/>
+    </linearGradient>
+    <linearGradient id="ph2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05070f"/>
+      <stop offset="1" stop-color="#241a44"/>
+    </linearGradient>
+    <linearGradient id="ph3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a2a26"/>
+      <stop offset=".6" stop-color="#175248"/>
+      <stop offset="1" stop-color="#e0b26a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx=".4" cy=".35" r=".6">
+      <stop offset="0" stop-color="#a48cff" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#a48cff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#6b5433" flood-opacity=".35"/>
+    </filter>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="700" fill="#f3e9d6"/>
+  <rect width="900" height="700" fill="url(#dots)"/>
+
+  <g filter="url(#blur)" opacity=".55">
+    <ellipse cx="180" cy="600" rx="150" ry="70" fill="#e2cdaa"/>
+    <ellipse cx="760" cy="120" rx="120" ry="70" fill="#e6d3b2"/>
+  </g>
+
+  <!-- 胶带 -->
+  <g opacity=".75">
+    <g transform="rotate(-12 130 120)">
+      <rect x="30" y="96" width="180" height="40" fill="#e9cfa4"/>
+      <rect x="30" y="96" width="180" height="40" fill="url(#stripes)"/>
+      <path d="M30 96 l10 10 -10 10 10 10 -10 10" fill="#f3e9d6" opacity=".5"/>
+    </g>
+    <g transform="rotate(8 460 92)">
+      <rect x="370" y="70" width="180" height="38" fill="#bfdcd6"/>
+      <rect x="370" y="70" width="180" height="38" fill="url(#stripes)" opacity=".4"/>
+    </g>
+    <g transform="rotate(-5 760 96)">
+      <rect x="672" y="74" width="170" height="38" fill="#e6b9ae"/>
+      <rect x="672" y="74" width="170" height="38" fill="url(#stripes)" opacity=".35"/>
+    </g>
+    <g transform="rotate(14 250 560)">
+      <rect x="160" y="540" width="170" height="36" fill="#d9d2b4"/>
+      <rect x="160" y="540" width="170" height="36" fill="url(#stripes)" opacity=".4"/>
+    </g>
+  </g>
+
+  <!-- 拍立得 A -->
+  <g transform="rotate(-6 200 300)" filter="url(#shadow)">
+    <rect x="80" y="150" width="250" height="300" rx="3" fill="#fffdf6"/>
+    <rect x="96" y="166" width="218" height="216" fill="url(#ph1)"/>
+    <circle cx="205" cy="270" r="120" fill="url(#glow1)"/>
+    <circle cx="205" cy="266" r="52" fill="#2a2258" stroke="#ffe3a3" stroke-width="1.4"/>
+    <path d="M153 266 A 52 52 0 0 0 257 266" fill="#1a1440" opacity=".6"/>
+    <ellipse cx="205" cy="270" rx="76" ry="18" fill="none" stroke="#9ad9e8" stroke-width="1.4" opacity=".8"/>
+    <g fill="#fff4d0">
+      <circle cx="130" cy="200" r="1.6"/><circle cx="268" cy="190" r="1.2"/><circle cx="240" cy="330" r="1.4"/>
+      <circle cx="150" cy="340" r="1.1"/><circle cx="284" cy="250" r="1"/>
+    </g>
+    <g stroke="#b9a989" stroke-width="3" stroke-linecap="round" opacity=".8">
+      <path d="M104 400 H 220"/><path d="M104 414 H 176"/>
+    </g>
+  </g>
+
+  <!-- 拍立得 B -->
+  <g transform="rotate(4 470 270)" filter="url(#shadow)">
+    <rect x="350" y="120" width="240" height="290" rx="3" fill="#fffdf6"/>
+    <rect x="364" y="134" width="212" height="208" fill="url(#ph2)"/>
+    <g stroke="#ffe3a3" stroke-width="1.4" opacity=".9">
+      <path d="M364 300 L 576 214"/><path d="M364 330 L 576 244"/>
+    </g>
+    <g fill="#ffe3a3">
+      <path d="M470 246 l30 12 -30 12 -8 -12 Z"/>
+    </g>
+    <g fill="#fff4d0" opacity=".8">
+      <circle cx="400" cy="180" r="1.6"/><circle cx="540" cy="170" r="1.2"/><circle cx="500" cy="290" r="1.4"/>
+      <circle cx="420" cy="320" r="1"/>
+    </g>
+    <g stroke="#b9a989" stroke-width="3" stroke-linecap="round" opacity=".8">
+      <path d="M372 366 H 500"/><path d="M372 380 H 452"/>
+    </g>
+  </g>
+
+  <!-- 拍立得 C -->
+  <g transform="rotate(-3 750 340)" filter="url(#shadow)">
+    <rect x="640" y="200" width="220" height="280" rx="3" fill="#fffdf6"/>
+    <rect x="654" y="214" width="192" height="198" fill="url(#ph3)"/>
+    <circle cx="750" cy="272" r="40" fill="#ffe9b8" opacity=".9"/>
+    <path d="M700 412 V 350 H 800 V 412 Z" fill="#0b221f" opacity=".85"/>
+    <path d="M690 352 Q 750 322 810 352 L 802 362 Q 750 336 698 362 Z" fill="#c9483c"/>
+    <path d="M706 384 Q 750 362 794 384" fill="none" stroke="#e6c27a" stroke-width="1.2"/>
+    <g fill="#ffe3a3">
+      <circle cx="690" cy="374" r="3"/><circle cx="810" cy="374" r="3"/>
+    </g>
+    <g stroke="#b9a989" stroke-width="3" stroke-linecap="round" opacity=".8">
+      <path d="M664 438 H 770"/><path d="M664 452 H 722"/>
+    </g>
+  </g>
+
+  <!-- 车票 -->
+  <g transform="rotate(3 180 560)" filter="url(#shadow)">
+    <rect x="60" y="500" width="250" height="104" rx="6" fill="#fbf4e4" stroke="#c9a865" stroke-width="1.4"/>
+    <path d="M236 500 V 604" stroke="#c9a865" stroke-width="1.2" stroke-dasharray="5 6"/>
+    <g stroke="#8d7b5c" stroke-width="2.4" stroke-linecap="round" opacity=".8">
+      <path d="M82 528 H 200"/><path d="M82 550 H 160"/><path d="M82 572 H 184"/>
+    </g>
+    <g fill="#b8453a" opacity=".85">
+      <circle cx="180" cy="540" r="12"/>
+      <path d="M180 532 l2.4 5.4 5.8 .6 -4.4 3.9 1.3 5.7 -5.1 -3 -5.1 3 1.3 -5.7 -4.4 -3.9 5.8 -.6 Z"/>
+    </g>
+    <g fill="none" stroke="#c9a865" stroke-width="1.4">
+      <circle cx="270" cy="528" r="6"/><circle cx="270" cy="552" r="6"/><circle cx="270" cy="576" r="6"/>
+    </g>
+  </g>
+
+  <!-- 印章 -->
+  <g transform="rotate(-12 760 560)" opacity=".8">
+    <circle cx="760" cy="560" r="48" fill="none" stroke="#b8453a" stroke-width="3" stroke-dasharray="4 5"/>
+    <circle cx="760" cy="560" r="34" fill="none" stroke="#b8453a" stroke-width="1"/>
+    <path d="M760 532 l6 17 18 1 -14 11 5 18 -15 -10 -15 10 5 -18 -14 -11 18 -1 Z" fill="#b8453a"/>
+    <path d="M718 616 q 42 16 84 0" stroke="#b8453a" stroke-width="2" fill="none" opacity=".6"/>
+  </g>
+
+  <!-- 手绘涂鸦 -->
+  <g fill="none" stroke="#3c4a63" stroke-width="2.2" stroke-linecap="round" opacity=".65">
+    <path d="M340 520 C 300 540 260 556 210 566"/>
+    <path d="M210 566 l20 -4 -6 18"/>
+    <path d="M520 560 q 18 -18 36 0 t 36 0"/>
+    <path d="M600 470 q 14 -16 28 0"/>
+  </g>
+  <g fill="none" stroke="#b8453a" stroke-width="1.8" opacity=".6" stroke-linecap="round">
+    <path d="M400 500 l8 16 16 8 -16 8 -8 16 -8 -16 -16 -8 16 -8 Z"/>
+    <path d="M560 620 l6 12 12 6 -12 6 -6 12 -6 -12 -12 -6 12 -6 Z"/>
+  </g>
+
+  <!-- 回形针 -->
+  <g fill="none" stroke="#9aa7bd" stroke-width="4" stroke-linecap="round" opacity=".8">
+    <path d="M812 96 v 70 a 16 16 0 0 0 32 0 V 82 a 24 24 0 0 0 -48 0 v 92"/>
+  </g>
+
+  <rect x="8" y="8" width="884" height="684" fill="none" stroke="#d8c7a8" stroke-width="2" opacity=".7"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="智识命途图标">
+  <g fill="none" stroke="#e6c27a" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M10 19 Q 22 13 32 20 Q 42 13 54 19 V 47 Q 42 41 32 48 Q 22 41 10 47 Z"/>
+    <path d="M32 20 V 48"/>
+    <circle cx="19" cy="30" r="2.2"/>
+    <circle cx="45" cy="30" r="2.2"/>
+    <path d="M19 36 h6 M39 36 h6" opacity=".7"/>
+  </g>
+</svg>

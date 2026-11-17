@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.replace("no-js", "js");</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>联络 · 星穹邮局与留言板 | 星穹日志</title>
+<meta name="description" content="给孙俊豪留言：星穹日志的联络页，包含车票式联系卡、本地留言板与结语。">
+<meta name="author" content="孙俊豪">
+<meta name="theme-color" content="#05060e">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html" aria-label="星穹日志 · 返回首页">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__text">星穹日志<em>STAR RAIL DIARY</em></span>
+    </a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navmenu" aria-label="打开导航菜单">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__menu" id="navmenu" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="about.html">开拓档案</a>
+      <a href="characters.html">星穹图鉴</a>
+      <a href="gallery.html">手账相册</a>
+      <a href="study.html">开拓计划</a>
+      <a class="nav__cta" href="contact.html">联络</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head" data-index="05">
+    <div class="container">
+      <p class="eyebrow">TRANSMISSION / 05</p>
+      <h1 class="page-title">联络</h1>
+      <p class="page-lead">列车广播：本车厢设有星穹邮局。你可以留下一句话，也可以只是看看别人写了什么——所有留言都只保存在你自己的浏览器里。</p>
+      <nav class="crumbs" aria-label="面包屑">
+        <a href="index.html">首页</a><span>/</span><span>联络</span>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:clamp(40px,6vw,64px)">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="ticket" data-reveal>
+          <div class="ticket__head">
+            <div>
+              <p class="ticket__no">ASTRAL EXPRESS · NO.2611-07</p>
+              <h3>乘客联络票</h3>
+            </div>
+            <img src="assets/img/favicon.svg" alt="" width="44" height="44" aria-hidden="true">
+          </div>
+
+          <dl class="ticket__rows">
+            <div class="ticket__row"><dt>NAME / 姓名</dt><dd>孙俊豪</dd></div>
+            <div class="ticket__row"><dt>CLASS / 班级</dt><dd>计算机 2611 班</dd></div>
+            <div class="ticket__row"><dt>MAJOR / 专业</dt><dd>计算机科学与技术</dd></div>
+            <div class="ticket__row"><dt>MAIL / 邮箱</dt><dd>sunjunhao@example.com</dd></div>
+            <div class="ticket__row"><dt>GITHUB / 仓库</dt><dd>github.com/your-name</dd></div>
+            <div class="ticket__row"><dt>BASE / 常驻</dt><dd>图书馆四楼 · 靠窗</dd></div>
+          </dl>
+
+          <div class="ticket__foot">
+            <span>BOARDING · 随时上车</span>
+            <span>2026 — 2027</span>
+          </div>
+        </div>
+
+        <div class="guestbook" data-reveal data-delay="1">
+          <h3>星穹邮局 · 留言板</h3>
+          <p>不必署名，也不必客套。写一句今天想说的话，或者给这个网站提一个建议。</p>
+
+          <form id="guestForm" novalidate>
+            <div class="field">
+              <label for="guestName">称呼 / NAME（可留空）</label>
+              <input type="text" id="guestName" name="name" maxlength="18" placeholder="匿名的开拓者" autocomplete="nickname">
+            </div>
+            <div class="field">
+              <label for="guestMsg">留言 / MESSAGE</label>
+              <textarea id="guestMsg" name="message" maxlength="200" required placeholder="写点什么吧，最多 200 字……"></textarea>
+            </div>
+            <div class="form-foot">
+              <button class="btn btn--gold" type="submit">投递留言 <span class="btn__arrow" aria-hidden="true">→</span></button>
+              <span class="form-note">留言保存在本机 · 不会上传</span>
+            </div>
+          </form>
+
+          <ul class="guest-list" id="guestList">
+            <li class="empty">留言板还是空的 —— 写下第一句星穹寄语吧。</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p class="disclaimer">
+        提交前的小提醒：车票上的邮箱与 GitHub 地址是占位示例，请替换成你自己的真实信息；留言板使用浏览器 localStorage 存储，不会上传到任何服务器，
+        清除浏览器数据后会一并消失。若要在多台设备之间共享留言，需要另外接入后端或第三方服务。
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--paper">
+    <span class="tape tape--tl" aria-hidden="true"></span>
+    <span class="tape tape--tr" aria-hidden="true"></span>
+    <div class="container">
+      <div class="quick">
+        <div>
+          <header class="sec-head" data-reveal>
+            <p class="eyebrow">EPILOGUE / 结语</p>
+            <h2 class="sec-title">把这本日志，<em>继续写下去</em></h2>
+          </header>
+          <div class="chapter" style="box-shadow:none" data-reveal>
+            <span class="chapter__no">THE END?</span>
+            <h3 style="margin-top:1rem">关于这门课，也关于我自己</h3>
+            <p>做这个网站之前，我以为“网页”就是拖几个框、放几张图。真正动手之后才发现，一行语义化的标签、一个能自适应的 Grid、一次正确的相对路径，背后都是需要认真对待的细节。</p>
+            <p>《计算机基础》教会我的，不只是软件怎么用，而是遇到不会的东西时，知道去哪里找答案、怎么把问题拆开。这个网站里的每一张 SVG、每一段 JS，都是这样一点点试出来的。</p>
+            <p>感谢老师这一学期的耐心，也感谢《崩坏：星穹铁道》给了我一个把“星海”变成网页的理由。愿这本小小的日志，能成为我大学生活的第一枚书签。</p>
+          </div>
+          <blockquote class="quote" style="margin-top:1.6rem" data-reveal>
+            愿此行，终抵群星。
+            <span class="quote__by">——《崩坏：星穹铁道》</span>
+          </blockquote>
+        </div>
+
+        <div class="notes">
+          <aside class="note" data-reveal data-delay="1">
+            <h4>这学期最想记住的一句话</h4>
+            <p>“先跑通，再优化。”——写代码是这样，做计划也是。别等到万事俱备才出发。</p>
+            <span class="note__sign">—— 孙俊豪</span>
+          </aside>
+          <aside class="note note--mint" data-reveal data-delay="2">
+            <h4>下一步想做的事</h4>
+            <p>学一点后端，把这个留言板变成真的能跨设备留言；再学一点动效，让列车真的开起来。</p>
+            <span class="note__sign">—— 寒假计划</span>
+          </aside>
+          <div class="seal" aria-hidden="true">孙<br>俊豪</div>
+        </div>
+      </div>
+
+      <div class="sec-foot" data-reveal>
+        <a class="btn btn--ghost" href="index.html">回到始发站 ↑</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">星穹日志<em>STAR RAIL DIARY</em></span>
+        </a>
+        <p>计算机专业 2611 班 · 孙俊豪的个人主页<br>以《崩坏：星穹铁道》为视觉主题的课程设计作业</p>
+      </div>
+      <nav class="footer__links" aria-label="页脚导航">
+        <a href="index.html">首页</a>
+        <a href="about.html">开拓档案</a>
+        <a href="characters.html">星穹图鉴</a>
+        <a href="gallery.html">手账相册</a>
+        <a href="study.html">开拓计划</a>
+        <a href="contact.html">联络</a>
+      </nav>
+    </div>
+    <p class="footer__note">
+      声明：本站为《计算机基础》课程作业，非官方页面。页面中的星球、列车与手账插画均由本人使用 SVG 代码绘制，未使用官方立绘或网络素材；
+      角色名称与世界观设定版权归米哈游所有，本站仅作学习交流之用，不作商业用途。
+    </p>
+    <p class="footer__copy">
+      <span>© <span data-year>2026</span> 孙俊豪 · 2611 班</span>
+      <span>BUILT WITH HTML / CSS / JAVASCRIPT · PUBLISHED ON GITHUB PAGES</span>
+    </p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

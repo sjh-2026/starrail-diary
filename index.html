@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.replace("no-js", "js");</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>星穹日志 · 孙俊豪的个人主页 | 崩坏：星穹铁道主题</title>
+<meta name="description" content="孙俊豪的个人主页，以《崩坏：星穹铁道》为视觉主题：开拓者档案、星穹图鉴、手账相册、开拓计划与留言板。计算机专业 2611 班课程作业。">
+<meta name="author" content="孙俊豪">
+<meta name="theme-color" content="#05060e">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html" aria-label="星穹日志 · 返回首页">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__text">星穹日志<em>STAR RAIL DIARY</em></span>
+    </a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navmenu" aria-label="打开导航菜单">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__menu" id="navmenu" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="about.html">开拓档案</a>
+      <a href="characters.html">星穹图鉴</a>
+      <a href="gallery.html">手账相册</a>
+      <a href="study.html">开拓计划</a>
+      <a class="nav__cta" href="contact.html">联络</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ 首屏 ============ -->
+  <section class="hero">
+    <canvas class="hero__stars" id="stars" aria-hidden="true"></canvas>
+    <div class="hero__glow" aria-hidden="true"></div>
+    <img class="hero__train" src="assets/img/train.svg" alt="星穹列车沿着金色星轨驶向星海深处" width="1000" height="420">
+    <div class="hero__scrim" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+      <p class="eyebrow">ASTRAL EXPRESS · 开拓日志 NO.2611</p>
+      <h1 class="hero__title">于星穹之下<span class="grad-text">写自己的开拓日志</span></h1>
+      <p class="hero__lead">
+        我是<strong>孙俊豪</strong>，计算机专业 2611 班的一名学生。把代码当作星轨，把好奇心当作燃料——
+        这一站，从我的个人主页开始。这里没有既定航线，只有一页一页亲手写下的记录。
+      </p>
+
+      <div class="hero__actions">
+        <a class="btn btn--gold" href="about.html">登上列车 <span class="btn__arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost" href="gallery.html">翻阅相册</a>
+      </div>
+
+      <ul class="hero__meta">
+        <li><span>始发站</span><strong>计算机学院 · 2611 班</strong></li>
+        <li><span>当前命途</span><strong>智识 / 写代码的人</strong></li>
+        <li><span>车厢编号</span><strong>07 · 靠窗</strong></li>
+      </ul>
+    </div>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>开拓 · TRAILBLAZE</span><span>星穹列车</span><span>命途 / 智识</span>
+        <span>HTML · CSS · JAVASCRIPT</span><span>手账与国潮</span><span>银河漫游指南</span>
+        <span>开拓 · TRAILBLAZE</span><span>星穹列车</span><span>命途 / 智识</span>
+        <span>HTML · CSS · JAVASCRIPT</span><span>手账与国潮</span><span>银河漫游指南</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 停靠站 ============ -->
+  <section class="section" id="stops">
+    <div class="container">
+      <header class="sec-head" data-reveal>
+        <p class="eyebrow">STOP 01 — 04</p>
+        <h2 class="sec-title">本次列车 · <em>停靠站</em></h2>
+        <p class="sec-sub">四节车厢，四种打开方式：一份关于我的档案、一本星穹图鉴、一册手账相册，还有一张写给这学期的开拓计划表。</p>
+      </header>
+
+      <div class="stops">
+        <a class="stop" href="about.html" data-reveal data-delay="1">
+          <span class="stop__no">/ 01</span>
+          <h3>开拓者档案</h3>
+          <p>姓名、专业、班级，以及一栏不太正经的属性面板。想快速认识我，看这一页就够了。</p>
+          <span class="stop__go">进入车厢 →</span>
+        </a>
+        <a class="stop" href="characters.html" data-reveal data-delay="2">
+          <span class="stop__no">/ 02</span>
+          <h3>星穹图鉴</h3>
+          <p>十位同行者，七条命途。我把喜欢的原因写成短评，也顺手做了一套筛选器。</p>
+          <span class="stop__go">翻开图鉴 →</span>
+        </a>
+        <a class="stop" href="gallery.html" data-reveal data-delay="3">
+          <span class="stop__no">/ 03</span>
+          <h3>手账相册</h3>
+          <p>黑塔空间站、雅利洛-VI、仙舟罗浮……九张原创插画，贴在带胶带与拍立得边框的手账纸上。</p>
+          <span class="stop__go">撕开胶带 →</span>
+        </a>
+        <a class="stop" href="study.html" data-reveal data-delay="4">
+          <span class="stop__no">/ 04</span>
+          <h3>开拓计划</h3>
+          <p>一张真实课表、六项技能进度、一份可以打勾的任务清单，还有一个倒计时时钟。</p>
+          <span class="stop__go">查看航图 →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 手账页 ============ -->
+  <section class="section section--paper">
+    <span class="tape tape--tl" aria-hidden="true"></span>
+    <span class="tape tape--tr" aria-hidden="true"></span>
+    <div class="container">
+      <div class="quick">
+        <div>
+          <header class="sec-head" data-reveal>
+            <p class="eyebrow">JOURNAL / 手账页</p>
+            <h2 class="sec-title">开拓者<em>速写</em></h2>
+            <p class="sec-sub">把数据写成诗，把日子贴成手账。下面这些数字，来自我的课表、代码仓库和桌面上的咖啡杯。</p>
+          </header>
+
+          <div class="stats" data-reveal>
+            <div class="stat">
+              <span class="stat__num">2611<small>班</small></span>
+              <span class="stat__label">CLASS / 班级编号</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">6,800<small>行</small></span>
+              <span class="stat__label">CODE / 本学期代码量</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">365<small>杯</small></span>
+              <span class="stat__label">COFFEE / 一年的咖啡</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">09<small>门</small></span>
+              <span class="stat__label">COURSES / 在修课程</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="notes">
+          <aside class="note" data-reveal data-delay="1">
+            <h4>凌晨两点的红黑树</h4>
+            <p>跟着网课用 C 语言手写红黑树，插入修了三个小时，最后发现是旋转时忘了更新父指针。跑通的那一刻，比抽到五星还开心。</p>
+            <span class="note__sign">—— 记于 11 月 12 日</span>
+          </aside>
+          <aside class="note note--mint" data-reveal data-delay="2">
+            <h4>夹在手账里的车票</h4>
+            <p>黑塔空间站、雅利洛-VI、仙舟罗浮，三张票根都还在。下一站想去翁法罗斯，看看黄金之城的光。</p>
+            <span class="note__sign">—— 记于 11 月 9 日</span>
+          </aside>
+          <aside class="note note--rose" data-reveal data-delay="3">
+            <h4>给同行者的留言</h4>
+            <p>如果你也喜欢星穹铁道，或者正在学前端，欢迎在留言板写一句话。我会把它抄进这本手账里。</p>
+            <span class="note__sign">—— 孙俊豪 · 2611</span>
+          </aside>
+          <div class="seal" aria-hidden="true">孙<br>俊豪</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 图鉴预告 ============ -->
+  <section class="section">
+    <div class="container">
+      <header class="sec-head sec-head--center" data-reveal>
+        <p class="eyebrow">GALLERY OF PATHS</p>
+        <h2 class="sec-title">星穹图鉴 · <em>先行预告</em></h2>
+        <p class="sec-sub">十位同行者，七条命途。先放出三位——剩下的，在图鉴页里等你翻牌。</p>
+      </header>
+
+      <div class="grid-cards">
+        <a class="char" href="characters.html" style="--c:#ff7a4d;--c-soft:rgba(255,122,77,.22)" data-reveal data-delay="1">
+          <div class="char__art">
+            <span class="char__stars" aria-hidden="true">★★★★★</span>
+            <span class="char__elem">火</span>
+            <span class="char__watermark" aria-hidden="true">姬</span>
+            <img class="char__icon" src="assets/img/icon-erudition.svg" alt="" width="64" height="64">
+          </div>
+          <div class="char__body">
+            <h3>姬子 <em>Himeko</em></h3>
+            <p class="char__path">智识 · 火</p>
+            <p class="char__note">列车的领航员。她让我相信：再远的航线，也是由一节一节车厢接起来的。</p>
+          </div>
+        </a>
+
+        <a class="char" href="characters.html" style="--c:#7fe0b0;--c-soft:rgba(127,224,176,.2)" data-reveal data-delay="2">
+          <div class="char__art">
+            <span class="char__stars" aria-hidden="true">★★★★★</span>
+            <span class="char__elem">风</span>
+            <span class="char__watermark" aria-hidden="true">丹</span>
+            <img class="char__icon" src="assets/img/icon-hunt.svg" alt="" width="64" height="64">
+          </div>
+          <div class="char__body">
+            <h3>丹恒 <em>Dan Heng</em></h3>
+            <p class="char__path">巡猎 · 风</p>
+            <p class="char__note">话不多，但每次开口都在关键处。像极了调试时那行真正有用的报错。</p>
+          </div>
+        </a>
+
+        <a class="char" href="characters.html" style="--c:#ff7a4d;--c-soft:rgba(255,122,77,.22)" data-reveal data-delay="3">
+          <div class="char__art">
+            <span class="char__stars" aria-hidden="true">★★★★★</span>
+            <span class="char__elem">火</span>
+            <span class="char__watermark" aria-hidden="true">萤</span>
+            <img class="char__icon" src="assets/img/icon-destruction.svg" alt="" width="64" height="64">
+          </div>
+          <div class="char__body">
+            <h3>流萤 <em>Firefly</em></h3>
+            <p class="char__path">毁灭 · 火</p>
+            <p class="char__note">短暂却滚烫。她提醒我：热爱这件事，本来就不该等到「以后」。</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="sec-foot" data-reveal>
+        <a class="btn btn--ghost" href="characters.html">查看全部十位 <span class="btn__arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 尾段号召 ============ -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="cta" data-reveal>
+        <p class="eyebrow">NEXT STOP</p>
+        <h2>银河很大，先写好眼前这一页。</h2>
+        <p>这是我的第一份个人主页，也是《计算机基础》课程设计作业。它会继续更新：新的相册、新的代码、新的车票。</p>
+        <div class="hero__actions" style="justify-content:center;margin-bottom:0">
+          <a class="btn btn--gold" href="contact.html">给我留句话 <span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost" href="about.html">重新认识我</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">星穹日志<em>STAR RAIL DIARY</em></span>
+        </a>
+        <p>计算机专业 2611 班 · 孙俊豪的个人主页<br>以《崩坏：星穹铁道》为视觉主题的课程设计作业</p>
+      </div>
+      <nav class="footer__links" aria-label="页脚导航">
+        <a href="index.html">首页</a>
+        <a href="about.html">开拓档案</a>
+        <a href="characters.html">星穹图鉴</a>
+        <a href="gallery.html">手账相册</a>
+        <a href="study.html">开拓计划</a>
+        <a href="contact.html">联络</a>
+      </nav>
+    </div>
+    <p class="footer__note">
+      声明：本站为《计算机基础》课程作业，非官方页面。页面中的星球、列车与手账插画均由本人使用 SVG 代码绘制，未使用官方立绘或网络素材；
+      角色名称与世界观设定版权归米哈游所有，本站仅作学习交流之用，不作商业用途。
+    </p>
+    <p class="footer__copy">
+      <span>© <span data-year>2026</span> 孙俊豪 · 2611 班</span>
+      <span>BUILT WITH HTML / CSS / JAVASCRIPT · PUBLISHED ON GITHUB PAGES</span>
+    </p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

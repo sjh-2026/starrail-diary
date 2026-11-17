@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="毁灭命途图标">
+  <g fill="none" stroke="#e6c27a" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M32 5 L55 32 L32 59 L9 32 Z"/>
+    <path d="M32 5 L25 23 L36 31 L27 44 L32 59"/>
+    <path d="M23 17 L40 21" opacity=".7"/>
+  </g>
+</svg>

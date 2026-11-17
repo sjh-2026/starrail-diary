@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="仙舟罗浮与中式楼阁插画">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#03100f"/>
+      <stop offset=".55" stop-color="#0a2523"/>
+      <stop offset="1" stop-color="#123a33"/>
+    </linearGradient>
+    <radialGradient id="planet" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#3f7d72"/>
+      <stop offset=".6" stop-color="#1c4a44"/>
+      <stop offset="1" stop-color="#0a1f1e"/>
+    </radialGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9583f"/>
+      <stop offset="1" stop-color="#8d2b22"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8a672c"/>
+      <stop offset=".45" stop-color="#ffe3a3"/>
+      <stop offset="1" stop-color="#8a672c"/>
+    </linearGradient>
+    <radialGradient id="lantern" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff4d0"/>
+      <stop offset=".45" stop-color="#ffc46b"/>
+      <stop offset="1" stop-color="#c9483c"/>
+    </radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+
+  <g fill="#ffffff">
+    <circle cx="66" cy="64" r="1.4" opacity=".8"/><circle cx="132" cy="120" r="1" opacity=".5"/>
+    <circle cx="200" cy="48" r="1.2" opacity=".6"/><circle cx="262" cy="104" r="1.5" opacity=".75"/>
+    <circle cx="330" cy="40" r="1" opacity=".5"/><circle cx="404" cy="86" r="1.2" opacity=".55"/>
+    <circle cx="468" cy="36" r="1.4" opacity=".7"/><circle cx="512" cy="150" r="1" opacity=".4"/>
+    <circle cx="96" cy="228" r="1.1" opacity=".5"/><circle cx="36" cy="330" r="1" opacity=".35"/>
+    <circle cx="176" cy="176" r="1.2" opacity=".5"/><circle cx="700" cy="240" r="1" opacity=".4"/>
+  </g>
+
+  <g opacity=".85">
+    <circle cx="660" cy="30" r="230" fill="url(#planet)"/>
+    <ellipse cx="660" cy="52" rx="300" ry="42" fill="none" stroke="#7fbfae" stroke-width="2" opacity=".45" transform="rotate(-10 660 52)"/>
+    <circle cx="660" cy="30" r="230" fill="none" stroke="#8fd6c2" stroke-width="1" opacity=".3"/>
+  </g>
+
+  <g filter="url(#soft)" opacity=".5">
+    <ellipse cx="400" cy="440" rx="240" ry="70" fill="#2f8f83"/>
+  </g>
+
+  <!-- 祥云 -->
+  <g fill="none" stroke="url(#gold)" stroke-width="1.6" stroke-linecap="round" opacity=".45">
+    <path d="M40 300 q 26 -34 56 -8 q 12 -30 44 -18 q 26 10 22 38"/>
+    <path d="M620 330 q 22 -30 50 -10 q 10 -26 40 -14 q 24 10 20 34"/>
+    <path d="M120 392 q 20 -24 44 -6 q 10 -22 34 -12"/>
+    <path d="M540 250 q 18 -24 42 -8 q 10 -20 32 -10"/>
+  </g>
+
+  <!-- 浮空岛 -->
+  <path d="M250 470 Q 380 436 512 470 Q 490 528 452 566 L 430 600 H 336 L 306 556 Q 268 520 250 470 Z" fill="#081c1b" stroke="#3f7a6d" stroke-width="1.4"/>
+  <path d="M250 470 Q 380 436 512 470" fill="none" stroke="url(#gold)" stroke-width="3"/>
+  <g stroke="#2f6158" stroke-width="1" opacity=".7" fill="none">
+    <path d="M300 500 L 330 560"/><path d="M360 496 L 366 574"/><path d="M430 500 L 410 566"/>
+  </g>
+
+  <!-- 楼阁 -->
+  <g>
+    <!-- 顶层 -->
+    <path d="M330 336 Q 380 302 430 336 L 422 348 Q 380 322 338 348 Z" fill="url(#roof)" stroke="url(#gold)" stroke-width="1.6"/>
+    <rect x="352" y="346" width="56" height="22" fill="#e2d3b4"/>
+    <g stroke="#8d2b22" stroke-width="4">
+      <path d="M356 346 V 368"/><path d="M380 346 V 368"/><path d="M404 346 V 368"/>
+    </g>
+    <!-- 中层 -->
+    <path d="M310 380 Q 380 340 452 380 L 442 394 Q 380 360 320 394 Z" fill="url(#roof)" stroke="url(#gold)" stroke-width="1.6"/>
+    <rect x="336" y="392" width="88" height="26" fill="#e2d3b4"/>
+    <g stroke="#8d2b22" stroke-width="4">
+      <path d="M342 392 V 418"/><path d="M380 392 V 418"/><path d="M418 392 V 418"/>
+    </g>
+    <!-- 底层 -->
+    <path d="M282 428 Q 380 386 478 428 L 466 444 Q 380 406 294 444 Z" fill="url(#roof)" stroke="url(#gold)" stroke-width="1.6"/>
+    <rect x="314" y="442" width="132" height="34" fill="#e8dcc0"/>
+    <g stroke="#8d2b22" stroke-width="5">
+      <path d="M322 442 V 476"/><path d="M352 442 V 476"/><path d="M408 442 V 476"/><path d="M438 442 V 476"/>
+    </g>
+    <rect x="368" y="450" width="26" height="26" fill="#3a1c16" stroke="url(#gold)" stroke-width="1.2"/>
+    <!-- 宝顶 -->
+    <path d="M380 302 V 282" stroke="url(#gold)" stroke-width="2.4"/>
+    <circle cx="380" cy="276" r="7" fill="#ffe3a3" filter="url(#glow)"/>
+  </g>
+
+  <!-- 灯笼 -->
+  <g>
+    <path d="M298 432 V 456" stroke="#c9a865" stroke-width="1"/>
+    <circle cx="298" cy="464" r="9" fill="url(#lantern)" filter="url(#glow)"/>
+    <path d="M462 432 V 456" stroke="#c9a865" stroke-width="1"/>
+    <circle cx="462" cy="464" r="9" fill="url(#lantern)" filter="url(#glow)"/>
+    <path d="M250 452 V 470" stroke="#c9a865" stroke-width="1"/>
+    <circle cx="250" cy="478" r="7" fill="url(#lantern)" filter="url(#glow)"/>
+    <path d="M510 452 V 470" stroke="#c9a865" stroke-width="1"/>
+    <circle cx="510" cy="478" r="7" fill="url(#lantern)" filter="url(#glow)"/>
+  </g>
+
+  <!-- 星槎 -->
+  <g opacity=".9">
+    <path d="M150 250 q 34 -16 68 0 q -34 14 -68 0 Z" fill="#122c28" stroke="#7fbfae" stroke-width="1.2"/>
+    <path d="M184 236 V 210" stroke="#c9a865" stroke-width="1.4"/>
+    <path d="M184 214 q 18 8 0 20 q -18 -12 0 -20 Z" fill="#e8dcc0" opacity=".85"/>
+    <circle cx="184" cy="258" r="2.6" fill="#ffe3a3" filter="url(#glow)"/>
+  </g>
+  <g opacity=".75">
+    <path d="M596 392 q 26 -12 52 0 q -26 11 -52 0 Z" fill="#122c28" stroke="#7fbfae" stroke-width="1"/>
+    <circle cx="622" cy="398" r="2" fill="#ffe3a3"/>
+  </g>
+
+  <!-- 远山 -->
+  <path d="M0 560 L 90 512 L 168 552 L 240 516 L 320 560 L 400 528 L 500 566 L 590 522 L 680 560 L 760 526 L 800 548 V600 H0 Z" fill="#04100f"/>
+  <path d="M0 560 L 90 512 L 168 552 L 240 516 L 320 560" fill="none" stroke="#2b5b52" stroke-width="1.2" opacity=".6"/>
+</svg>

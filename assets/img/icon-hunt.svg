@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="巡猎命途图标">
+  <g fill="none" stroke="#e6c27a" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M11 53 L53 11"/>
+    <path d="M35 11 H53 V29"/>
+    <path d="M12 24 Q 34 30 40 52"/>
+    <path d="M20 44 L28 52" opacity=".7"/>
+  </g>
+</svg>

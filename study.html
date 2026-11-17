@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.replace("no-js", "js");</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>开拓计划 · 课表、技能与任务清单 | 星穹日志</title>
+<meta name="description" content="孙俊豪的学期开拓计划：真实课表、六项技能进度、可勾选并存档的任务清单，以及一个实时的期末倒计时时钟。">
+<meta name="author" content="孙俊豪">
+<meta name="theme-color" content="#05060e">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html" aria-label="星穹日志 · 返回首页">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__text">星穹日志<em>STAR RAIL DIARY</em></span>
+    </a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navmenu" aria-label="打开导航菜单">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__menu" id="navmenu" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="about.html">开拓档案</a>
+      <a href="characters.html">星穹图鉴</a>
+      <a href="gallery.html">手账相册</a>
+      <a href="study.html">开拓计划</a>
+      <a class="nav__cta" href="contact.html">联络</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head" data-index="04">
+    <div class="container">
+      <p class="eyebrow">NAVIGATION / 04</p>
+      <h1 class="page-title">开拓计划</h1>
+      <p class="page-lead">这一页比较“务实”：一张这学期真正在上的课表、六项技能的自评进度、一份可以打勾的任务清单，还有一个会自己走动的倒计时。</p>
+      <nav class="crumbs" aria-label="面包屑">
+        <a href="index.html">首页</a><span>/</span><span>开拓计划</span>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="plan-top">
+        <aside class="clock" data-reveal aria-label="时间与倒计时">
+          <p class="clock__label">SHIP TIME / 舰内时间</p>
+          <time class="clock__time" id="clockTime">00:00:00</time>
+          <p class="clock__date" id="clockDate">正在校准星轨……</p>
+          <p class="clock__cd">距离本学期期末周（2027.01.15）还有
+            <b id="clockCd">—</b>
+          </p>
+        </aside>
+
+        <div class="plan-copy" data-reveal data-delay="1">
+          <h3>写给这学期的航行图</h3>
+          <p>大一上学期的关键词是「打地基」：高数、线代、C 语言、计算机导论，每一门都不算轻松。我把它们排成一条航线，而不是一堆待办事项——这样每天起床时，至少知道自己要往哪个方向飞一点。</p>
+          <p>课表之外，我给自己留了三块固定时间：晚上八点到十点写代码，周六上午整理笔记，周日晚上做手账复盘。计划不一定每天都能完成，但航线画在那里，迷路时抬头就能看见。</p>
+          <p>下面的清单会自动记住你的勾选（保存在浏览器本地），刷新页面也不会丢。你可以试着点一点，看看进度条会不会动。</p>
+        </div>
+      </div>
+
+      <div class="table-wrap" data-reveal>
+        <table class="timetable">
+          <caption>2026—2027 学年第一学期 · 计算机 2611 班课表（节选）</caption>
+          <thead>
+            <tr>
+              <th scope="col">节次 / 时间</th>
+              <th scope="col">周一</th>
+              <th scope="col">周二</th>
+              <th scope="col">周三</th>
+              <th scope="col">周四</th>
+              <th scope="col">周五</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1—2 节<br>08:00—09:40</th>
+              <td><b>高等数学（A）</b><span>教三 401</span></td>
+              <td><b>线性代数</b><span>教二 208</span></td>
+              <td><b>高等数学（A）</b><span>教三 401</span></td>
+              <td><b>大学英语（一）</b><span>外语楼 305</span></td>
+              <td><b>高等数学（A）</b><span>习题课 · 教三 401</span></td>
+            </tr>
+            <tr>
+              <th scope="row">3—4 节<br>10:00—11:40</th>
+              <td><b>大学英语（一）</b><span>外语楼 305</span></td>
+              <td><b>计算机导论</b><span>计科楼 B201</span></td>
+              <td class="is-lab"><b>C 语言程序设计</b><span>机房 A305 · 实验</span></td>
+              <td><b>线性代数</b><span>教二 208</span></td>
+              <td class="is-lab"><b>计算机导论</b><span>机房 B103 · 实验</span></td>
+            </tr>
+            <tr>
+              <th scope="row">5—6 节<br>14:00—15:40</th>
+              <td class="is-lab"><b>C 语言程序设计</b><span>机房 A305 · 上机</span></td>
+              <td><b>体育（一）</b><span>东区体育馆</span></td>
+              <td><b>思想道德与法治</b><span>文科楼 102</span></td>
+              <td><b>心理健康教育</b><span>文科楼 205</span></td>
+              <td><b>自习 / 社团</b><span>图书馆四楼</span></td>
+            </tr>
+            <tr>
+              <th scope="row">7—8 节<br>16:00—17:40</th>
+              <td><b>新生研讨课</b><span>计科楼 A101</span></td>
+              <td><b>自习</b><span>图书馆四楼 · 靠窗</span></td>
+              <td><b>新生研讨课</b><span>双周 · 计科楼 A101</span></td>
+              <td><b>自习</b><span>图书馆四楼 · 靠窗</span></td>
+              <td><b>开放实验</b><span>创客空间</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="plan-grid">
+        <div data-reveal>
+          <header class="sec-head" style="margin-bottom:1.6rem">
+            <p class="eyebrow">SKILL PANEL</p>
+            <h2 class="sec-title" style="font-size:clamp(1.4rem,2.6vw,1.9rem)">技能进度</h2>
+            <p class="sec-sub" style="font-size:.9rem">自评，满分 100。每周日复盘时更新一次，掉分也如实记录。</p>
+          </header>
+
+          <div class="bars" data-reveal>
+            <div class="bar">
+              <span class="bar__name">C 语言</span>
+              <span class="bar__track"><span class="bar__fill" style="--v:82%"></span></span>
+              <span class="bar__val">82</span>
+            </div>
+            <div class="bar">
+              <span class="bar__name">Python</span>
+              <span class="bar__track"><span class="bar__fill" style="--v:75%"></span></span>
+              <span class="bar__val">75</span>
+            </div>
+            <div class="bar">
+              <span class="bar__name">HTML / CSS</span>
+              <span class="bar__track"><span class="bar__fill" style="--v:88%"></span></span>
+              <span class="bar__val">88</span>
+            </div>
+            <div class="bar">
+              <span class="bar__name">JavaScript</span>
+              <span class="bar__track"><span class="bar__fill" style="--v:66%"></span></span>
+              <span class="bar__val">66</span>
+            </div>
+            <div class="bar">
+              <span class="bar__name">数据结构</span>
+              <span class="bar__track"><span class="bar__fill" style="--v:58%"></span></span>
+              <span class="bar__val">58</span>
+            </div>
+            <div class="bar">
+              <span class="bar__name">Git</span>
+              <span class="bar__track"><span class="bar__fill" style="--v:70%"></span></span>
+              <span class="bar__val">70</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-reveal data-delay="1">
+          <header class="sec-head" style="margin-bottom:1.6rem">
+            <p class="eyebrow">QUEST LOG</p>
+            <h2 class="sec-title" style="font-size:clamp(1.4rem,2.6vw,1.9rem)">开拓任务</h2>
+            <p class="sec-sub" style="font-size:.9rem">勾选会保存在本机浏览器里，换设备不会同步。</p>
+          </header>
+
+          <div class="progress-head">
+            <span>COMPLETION / 完成度</span>
+            <b id="taskCount">2 / 8</b>
+          </div>
+          <div class="progress" role="progressbar" aria-label="任务完成度" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress__bar" id="taskBar" style="width:25%"></div>
+          </div>
+
+          <ul class="tasklist">
+            <li class="task">
+              <input type="checkbox" id="task1" data-task="t1" checked>
+              <label class="task__text" for="task1">完成课程设计个人主页（6 个页面）<small>DEADLINE · 11.30</small></label>
+            </li>
+            <li class="task">
+              <input type="checkbox" id="task2" data-task="t2" checked>
+              <label class="task__text" for="task2">推送到 GitHub 并开启 Pages 发布<small>DEADLINE · 12.05</small></label>
+            </li>
+            <li class="task">
+              <input type="checkbox" id="task3" data-task="t3">
+              <label class="task__text" for="task3">手写 100 道 C 语言基础题<small>PROGRESS · 47 / 100</small></label>
+            </li>
+            <li class="task">
+              <input type="checkbox" id="task4" data-task="t4">
+              <label class="task__text" for="task4">用 Flex 与 Grid 重写一遍首页布局<small>DEADLINE · 12.10</small></label>
+            </li>
+            <li class="task">
+              <input type="checkbox" id="task5" data-task="t5">
+              <label class="task__text" for="task5">读完《代码整洁之道》前六章<small>READING · 每周两章</small></label>
+            </li>
+            <li class="task">
+              <input type="checkbox" id="task6" data-task="t6">
+              <label class="task__text" for="task6">英语四级模考稳定在 500 分以上<small>EXAM · 12.19</small></label>
+            </li>
+            <li class="task">
+              <input type="checkbox" id="task7" data-task="t7">
+              <label class="task__text" for="task7">给星穹图鉴再加 3 位角色<small>BONUS · 有空就写</small></label>
+            </li>
+            <li class="task">
+              <input type="checkbox" id="task8" data-task="t8">
+              <label class="task__text" for="task8">把手账相册扩充到 12 张插画<small>BONUS · 寒假前</small></label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cta" style="margin-top:clamp(40px,6vw,72px)" data-reveal>
+        <p class="eyebrow">CHECKPOINT</p>
+        <h2>计划写在纸上，进度留在脚下。</h2>
+        <p>这份课表与清单会随着学期推进更新。如果你也想做一份自己的“开拓计划”，欢迎在留言板告诉我。</p>
+        <div class="hero__actions" style="justify-content:center;margin-bottom:0">
+          <a class="btn btn--gold" href="contact.html">去留言板写字 <span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost" href="gallery.html">回相册看看</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">星穹日志<em>STAR RAIL DIARY</em></span>
+        </a>
+        <p>计算机专业 2611 班 · 孙俊豪的个人主页<br>以《崩坏：星穹铁道》为视觉主题的课程设计作业</p>
+      </div>
+      <nav class="footer__links" aria-label="页脚导航">
+        <a href="index.html">首页</a>
+        <a href="about.html">开拓档案</a>
+        <a href="characters.html">星穹图鉴</a>
+        <a href="gallery.html">手账相册</a>
+        <a href="study.html">开拓计划</a>
+        <a href="contact.html">联络</a>
+      </nav>
+    </div>
+    <p class="footer__note">
+      声明：本站为《计算机基础》课程作业，非官方页面。页面中的星球、列车与手账插画均由本人使用 SVG 代码绘制，未使用官方立绘或网络素材；
+      角色名称与世界观设定版权归米哈游所有，本站仅作学习交流之用，不作商业用途。
+    </p>
+    <p class="footer__copy">
+      <span>© <span data-year>2026</span> 孙俊豪 · 2611 班</span>
+      <span>BUILT WITH HTML / CSS / JAVASCRIPT · PUBLISHED ON GITHUB PAGES</span>
+    </p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
